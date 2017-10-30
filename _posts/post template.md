@@ -1,9 +1,9 @@
 ---
-layout: post
-title: "Welcome 5dw!"
-date: 2017-10-30 15:48:20 +0800
+layout: #post
+title: #"template"
+date: #2017-10-30 15:48:20 +0800
 description: # Add post description (optional)
-img: 5dw.png # Add image post (optional)
+img: # Add image post (optional)
 ---
 
 # 5DW

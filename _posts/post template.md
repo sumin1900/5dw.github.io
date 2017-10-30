@@ -4,6 +4,7 @@ title: #"template"
 date: #2017-10-30 15:48:20 +0800
 description: # Add post description (optional)
 img: # Add image post (optional)
+comments: true
 ---
 
 # 5DW
@@ -41,7 +42,7 @@ Welcome to 5dw, the 5 dimention network!
 #### 引用
 > 这是一个包含两个段落的引用。
 > 在每个段落里都有多行内容。
-> 
+>
 > 这是一个包含两个段落的引用。
 > 在每个段落里都有多行内容。
 
@@ -79,7 +80,7 @@ Welcome to 5dw, the 5 dimention network!
 **********************************
 * * *
 ----------------------------------
--  -  - 
+-  -  -
 __________________________________
 _ _ _
 

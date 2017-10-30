@@ -6,22 +6,9 @@ description: # Add post description (optional)
 img: 5dw.png # Add image post (optional)
 ---
 
+# 5DW
 Welcome to 5dw, the 5 dimention network!
-> Notes
-> Notes
-
 ## Markdown语法
-您可以在[这里](4)找到更多关于Markdown语法的内容。
-
-### 基本语法
-#### 标题
-># 这是一号标题H1
->## 这是二号标题H2
->### 这是三号标题H3
->#### 这是四号标题H4
->##### 这是五号标题H5
->###### 这是六号标题H6
-> 这不是标题而是正文内容。
 
 #### 强调
 斜体 = 两边分别加一个 `*` 或 `_`；
@@ -164,6 +151,15 @@ Markdown里面可以使用反斜杠转意下面的字符（因为它们有特别
 
 
 #### 代码高亮
+
+{% highlight ruby %}
+def print_hi(name)
+  puts "Hi, #{name}"
+end
+print_hi('Tom')
+#=> prints 'Hi, Tom' to STDOUT.
+{% endhighlight %}
+
 
 ``` python
 #!/usr/bin/python

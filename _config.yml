@@ -9,14 +9,14 @@ url: "https://5dw.github.io/" # the base hostname & protocol for your site, e.g.
 author: 5dw # add your name
 author-img: david-freeman.jpg # add your photo
 about-author: 无敌网. # add description
-twitter: # add your Twitter handle
-facebook: # add your Facebook handle
+#twitter: # add your Twitter handle
+#facebook: # add your Facebook handle
 github: 5dw # add your Github handle
-linkedin: # add your Linkedin handle
-email: # add your Email address
+#linkedin: # add your Linkedin handle
+email: x.zhiquan@gmail.com # add your Email address
 
 # Disqus
-discus-identifier: mr-brown # add your discus identifier
+discus-identifier: 5dw # add your discus identifier
 
 # Tracker
 analytics: # Google Analytics

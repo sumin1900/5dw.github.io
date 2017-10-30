@@ -1,4 +1,7 @@
---- layout: main ---
+---
+layout: main
+---
+
 <article class="article-page">
     <div class="page-content">
         {% if page.img %}
@@ -25,7 +28,9 @@
                 </div>
             </div>
             <!--only show disqus if enable comments in the page -->
-            {% if page.comments %} {% include disqus.html %} {% endif %}
+            {% if page.comments %}
+              {% include disqus.html %}
+            {% endif %}
         </div>
         <!-- End Wrap Content -->
     </div>

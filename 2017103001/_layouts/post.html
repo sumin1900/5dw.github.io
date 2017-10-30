@@ -27,7 +27,10 @@ layout: main
           {% endfor %}
         </div>
       </div>
-      {% include disqus.html %}
+      <!--only show disqus if enable comments in the page -->
+      {% if page.comments %}
+        {% include disqus.html %}
+      {% endif %}
     </div> <!-- End Wrap Content -->
   </div> <!-- End Page Content -->
 </article> <!-- End Article Page -->

@@ -8,7 +8,7 @@ url: "https://5dw.github.io/" # the base hostname & protocol for your site, e.g.
 # Author Settings
 author: 5dw # add your name
 author-img: 5dw.png # add your photo
-about-author: <b>无敌网</b><br/><table><tr><th>未来之网</th><th>网尽人间百味</th></tr><tr><td>五维之网</td><td>网尽古今南北</td></tr></table> # add description
+about-author: <div><b>无敌网</b></div>未来之网,网尽人间百味;<br/>五维之网,网尽古今南北。 # add description
 #twitter: # add your Twitter handle
 #facebook: # add your Facebook handle
 github: 5dw # add your Github handle

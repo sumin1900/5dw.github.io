@@ -1,5 +1,5 @@
 # Site settings
-title: 5DW
+title: 无敌网
 SEOTitle: 无敌网 | 5DW
 header-img: img/header.jpg
 email: x.zhiquan@gmail.com
@@ -67,7 +67,7 @@ netease_comment: false
 
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
-sidebar-about-description: "<center>无敌网 - 五维之网</center>"
+sidebar-about-description: "无敌网 - 五维之网"
 sidebar-avatar: /img/5dw.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 

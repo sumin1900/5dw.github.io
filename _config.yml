@@ -67,7 +67,7 @@ netease_comment: false
 
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
-sidebar-about-description: "努力影响世界，思考<br>三维之空、四维之间、五维之世界"
+sidebar-about-description: "沙一粒<br>努力影响世界<br>思考<br>三维之空、四维之间、五维之世界"
 sidebar-avatar: /img/5dw.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 

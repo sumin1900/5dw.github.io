@@ -67,7 +67,7 @@ netease_comment: false
 
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
-sidebar-about-description: "无敌网 - 五维之网<br>思考三维之空、四维之间、五维之世界"
+sidebar-about-description: "努力影响世界，思考<br>三维之空、四维之间、五维之世界"
 sidebar-avatar: /img/5dw.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 
@@ -118,3 +118,11 @@ service-worker: true
     #     href: "http://wepiaofei.github.io/blog/"
     # }
 #]
+
+
+# translate
+featured-tags-text: 特色标签
+about-me-text: 关于我
+catalog-text: 目录
+previous-text: 前一篇
+next-text: 后一篇

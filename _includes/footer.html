@@ -77,16 +77,6 @@
                             </span>
                         </a>
                     </li>
-                    {% endif %}                    
-                    {% if site.email %}
-                    <li>
-                        <a target="_blank" href="mailto:{{site.email}}">
-                            <span class="fa-stack fa-lg">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-envelope-o fa-stack-1x fa-inverse"></i>
-                            </span>
-                        </a>
-                    </li>
                     {% endif %}
                 </ul>
                 <p class="copyright text-muted">
@@ -217,7 +207,7 @@
 <script type="text/javascript">
     function generateCatalog (selector) {
 
-        // interop with multilangual
+        // interop with multilangual 
         if ({{ page.multilingual }}) {
             _containerSelector = 'div.post-container.active'
         } else {
@@ -307,7 +297,7 @@
             $en.style.display = "none";
             $en.classList.remove("active");
         }
-        // interop with catalog
+        // interop with catalog 
         if ("{{ page.catalog }}") generateCatalog(".catalog-body");
     }
 

@@ -8,7 +8,7 @@ header-img: "img/5dw.jpg"
 catalog: false
 comment: false
 tags:
-    - tag2
+    - 
 ---
 
 Welcome to 5dw, the 5 dimention network!

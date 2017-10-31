@@ -31,8 +31,12 @@ tags:
 
 ## 下载和安装Jekyll
 你可以从Jekyll的网站([英文](http://jekyll.com/)或[中文](http://jekyll.com.cn/))上得到所有需要的信息。但这里简单介绍一下必须的步骤。
-1. 官方不建议在Windows下安装Jekyll，虽然你可以做到。这里建议，如果你用的是Windows系统，那么你可以跳过Jekyll部分，因为没有它你一样可以成功搭建你的网站，只不过不能本地调试而已。
-
+1. 官方不建议在Windows下安装Jekyll，虽然你可以做到。这里建议，如果你用的是Windows系统，那么你可以跳过Jekyll部分，因为没有它你一样可以成功搭建你的网站，只不过不能本地调试而已。这里以Macbook为例。
+2. 通过命令`gem install jekyll`来安装jekyll
+3. 通过命令`jekyll new first`来创建自己的本地网站。这里‘first’是网站名，也是本地目录的名字，你可以随便用任何你想用的名字。
+4.
+[jekyll terminal]({{img/jekyll_first.png}})
+[jekyll website]({{img/jekyll_site.png}})
 # Github注册
 # Git用法
 # 选择现成模板

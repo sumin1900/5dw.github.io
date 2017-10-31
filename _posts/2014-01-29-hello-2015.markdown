@@ -8,7 +8,6 @@ header-img: ""
 catalog: true
 comment: true
 tags:
-    - 生活
 ---
 
 > “Yeah It's on. ”

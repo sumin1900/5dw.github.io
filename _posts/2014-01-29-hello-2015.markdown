@@ -6,7 +6,7 @@ date:       2015-01-29 12:00:00
 author:     "Hux"
 header-img: ""
 catalog: true
-comments: true
+comment: true
 tags:
     - 生活
 ---

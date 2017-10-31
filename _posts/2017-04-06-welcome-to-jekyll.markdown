@@ -6,7 +6,7 @@ date:       2015-01-29 12:00:00
 author:     "5dw"
 header-img: "img/5dw.jpg"
 catalog: true
-comments: true
+comment: true
 tags:
     - tag1
 ---

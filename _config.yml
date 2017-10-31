@@ -67,7 +67,7 @@ netease_comment: false
 
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
-sidebar-about-description: "无敌网 - 五维之网"
+sidebar-about-description: "<center>无敌网 - 五维之网</center>"
 sidebar-avatar: /img/5dw.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 

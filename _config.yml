@@ -121,6 +121,7 @@ service-worker: true
 
 
 # translate
+posted-on-text: 发表于
 featured-tags-text: 特色标签
 about-me-text: 关于我
 catalog-text: 目录

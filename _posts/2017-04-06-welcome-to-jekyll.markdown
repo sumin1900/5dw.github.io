@@ -8,6 +8,7 @@ header-img: "img/5dw.jpg"
 catalog: true
 comment: true
 tags:
+  - 5dw
 ---
 
 

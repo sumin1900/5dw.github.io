@@ -8,6 +8,7 @@ header-img:  # Add image post (optional)
 comment: false
 catalog: false
 tags:
+  - 5dw
 ---
 
 # 5DW

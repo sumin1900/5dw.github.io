@@ -30,7 +30,6 @@ tags:
 # Jekyll安装和尝试
 > Jekyll不是必须的。但是它可以在本地启动一个服务器让你不需要上传内容就可以看到效果，从而帮助你调试网站，直到满意，才把内容上传到Github上去。这可以节省不少的时间。
 
-## 下载和安装Jekyll
 你可以从Jekyll的网站([英文](http://jekyll.com/)或[中文](http://jekyll.com.cn/))上得到所有需要的信息。这里简单介绍一下必须的步骤。
 1. 官方不建议在Windows下安装Jekyll，虽然你可以做到。这里建议，如果你用的是Windows系统，那么你可以跳过Jekyll部分，因为没有它你一样可以成功搭建你的网站，只不过不能本地调试而已。这里以**Macbook**为例（Linux类似，Windows请绕行）。
 2. 通过命令`gem install jekyll`来安装jekyll
@@ -51,5 +50,31 @@ tags:
 ![](/img/github_reg2.png)
 
 # Git用法
+`git`命令可以用来管理github上的repository，可以把内容下载到本地，也可以把本地的修改上传到github。当然还可以做很多版本管理的事情，这里不涉及，有兴趣的可以自行搜索学习。在我们搭建博客网站的过程中主要需要用到下面几条命令：
+1. `git clone`: 可以把github上的一个repository下载到本地,而且它会把这个本地目录和你的github repository对应关系记录下来.
+    * 我们用`git clone https://github.com/5dw/5dw.github.io 5dw`来把repository下载到本地。这里当然你需要把5dw换成你自己的名字。面最后一个5dw是本地目录的名字，你可以指定不同的目录名，也可以省略，那样git会帮你建一个叫做5dw.github.io的目录。
+    * 你打开新建的本地目录会发现里面有两个东西。一个叫`.git`，另一个叫`README.md`。第一个是个目录，用来存放git自己所需要的信息，比如和github repository的对应关系，本地修改历史等等。因为前面的那个小点，所有在某些系统里可能是隐藏的。能不能看到它都没关系，因为你不需要手动对它做任何事情。而README.md这个文件是一个说明文件，当你在github里打开你的repository首页的时候，会显示这里面的内容。格式是markdown。但是因为咱们这里的目的是搭建博客网站，我们的读者不会直接到github里去看repository，所以README.md的内容也没关系。
+2. `git stage`: 和`git add`完全一样。把本地的修改打包（暂且用这个词），告诉git我接下来会把哪些本地修改提交上去。
+    * `git stage 2017*.md`，这条命令会把所有以2017开头的.md文件打包。
+    * `git stage *`，这条会把本地在上次提交之后的所有修改打包。
+3. `git commit`：把已经打包的修改提交到本地repository。
+	* `git commit -m "description"`，你需要在提交的时候填写description来说明你这次提交的内容是关于什么的修改。这个说明信息是必须的。
+4. `git push`：把本地提交的修改上传到服务器，也就是github。
+5. `git pull`：把服务器上的最新版本下载到本地。
+6. 使用`git push`和`git pull`的时候需要注意，如果你在不同的机器上编辑同一个repository，比如多个人协同编辑，需要保证尽量避免冲突。在有冲突的情况下这两条命令会要求你解决这些冲突，比如保留哪一份提交等等。
+
 # 选择现成模板
-# 一般问题
+Jekyll很不错，但是我不想自己从0涉及自己的网站样式。所以我选择直接应用现成的模板。有很多好心人自己做了模板拿出来和大家分享，本站用的就是[Hux](http://huangxuan.me/)的模板。你也可以到[jekyllthemes](http://jekyllthemes.org)等网站上找自己喜欢的模板。
+
+当你选中一个模板之后，就需要把它下载到本地，并做些修改。方法就是用上面的git命令，因为这些模板也都是存在github中的。
+
+以Hux的模板为例。我通过命令`git clone https://github.com/Huxpro/huxpro.github.io.git hux`就把整个模板下载到了本地一个叫hux的目录中。如果你是用的Windows系统，而且没有安装Jekyll也自然没有创建自己的first网站，那么这个hux目录就可以被看作是你新建的网站，只不过你是站在了别人的肩膀上。这个hux目录和前面的first目录在下面的步骤中可以一样对待。
+
+## 模板中的格式问题
+## 本站对模板所做的修改
+##　注意事项
+
+
+现在我们有了本地jekyll的一个虽然丑陋但完整的博客网站，也有了github repository，也知道了git命令的用法。下面我们把这些连起来用，把我们的本地网站上传到github看一下效果。
+1. 找到上面你创建的jekyll网站目录（我用的是first）或者是下载的现成的模板目录（我用的是hux目录），把里面所有的内容复制，并粘贴到`git clone`下载的repository本地目录中。需要注意的是，如果你是从别人的模板中复制内容，你**一定不要**把他的.git目录一起复制，因为那样你的repository信息就会丢失，而被别人的repository信息替换，而你又没有对别人的repository的写权限，所以后面上传的时候会出问题。
+2. 打开一个命令行

@@ -140,7 +140,24 @@ Jekyll模板语言中有两类需要解释：
 > * 页面或博客文章中有一个配置项是`layout`，这个决定了这个页面的内容会被用哪个格式文件显示。比如一个文章的layout设置成了post，也就是`layout: post`，而我们在_layout下面有个post.html格式文件，那么当你需要访问这个文章的时候，网站会把post.html载入，并把这个文章中的所有内容替换post.html中的`{% raw %}{{content}}{% endraw %}`。当然，post.html也可以设置layout，把它嵌套进另一个格式文件。
 
 ## 本站对模板所做的修改
-
+借来了Hux的模板，为了满足自己的要求做了一些修改：
+1. 删除了除主页之外的其他页面（除了404）。并修改了_includes/nav.html，注释掉了导航菜单。
+2. _includes/footer.html中之前在页面最下面显示linkedin, github, facebook等的图标链接，增加了邮件图标。根据`site.email`来显示。
+```
+{% raw %}
+{% if site.email %}
+	<li>
+		<a target="_blank" href="mailto:{{site.email}}">
+			<span class="fa-stack fa-lg">
+				<i class="fa fa-circle fa-stack-2x"></i>
+				<i class="fa fa-envelope-o fa-stack-1x fa-inverse"></i>
+			</span>
+		</a>
+	</li>
+{% endif %}
+{% endraw %}
+```
+3. 
 
 ## 注意事项
 1. CNAME文件。如果有这个文件，一定要把内容修改成自己的域名，否则会出错。
@@ -160,11 +177,21 @@ Jekyll模板语言中有两类需要解释：
 
 如果没有报错，完成上面步骤之后，你的本地内容已经成功上传到了github中。现在你的博客网站已经上线，可以去查看一下。从浏览器中打开地址http://5dw.github.io，当然你还是需要把这里的5dw替换成你自己的github名字。
 
-> 恭喜你有了自己的博客网站！！
-
-# Markdown语法
+> 恭喜你有了自己的博客网站，是时候开始写作影响世界了！！
 
 # 开始写作之旅，添加自己的博客文章
+
+有了自己的博客网站，剩下的事情就是写文章了。我们需要做的事情只有一件，就是在_posts下面不停地添加markdown文件，每一个文件对应一个文章。每个文章有如下格式：
+> ---
+> XXX1: YYY2
+> XXX2: YYY2
+> ---
+> 
+> Markdown内容
+
+开头是ymal配置信息，一般会有title，date等等，这取决于你的模板文件中都用到了哪些。需要特别注意的是date这个东西，需要严格按照格式`2017-02-09 12:00:00`来。
+
+Markdown内容就是你的文章正文，Markdown的说法可以自行搜索。
 
 顺便打个广告，当我在Windows 10上写作的时候，我用Bookpad app，可以在[Store](https://www.microsoft.com/store/apps/9N6P5ZH2SJSX)里面找到。界面如下：
 ![](/img/bookpad.png)

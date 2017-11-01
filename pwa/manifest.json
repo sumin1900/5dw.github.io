@@ -1,0 +1,19 @@
+{
+  "name": "五D网",
+  "short_name": "5DW",
+  "description": "通往五维空间的知识之路",
+  "icons": [{
+    "src": "icons/128.ico",
+    "sizes": "128x128",
+    "type": "image/png"
+  }, {
+    "src": "icons/256.ico",
+    "sizes": "256x256",
+    "type": "image/png"
+  }],
+  "background_color": "#fff",
+  "theme_color": "#000",
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "portrait"
+}

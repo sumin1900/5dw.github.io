@@ -143,21 +143,11 @@ Jekyll模板语言中有两类需要解释：
 借来了Hux的模板，为了满足自己的要求做了一些修改：
 1. 删除了除主页之外的其他页面（除了404）。并修改了_includes/nav.html，注释掉了导航菜单。
 2. _includes/footer.html中之前在页面最下面显示linkedin, github, facebook等的图标链接，增加了邮件图标。根据`site.email`来显示。
-```
-{% raw %}
-{% if site.email %}
-	<li>
-		<a target="_blank" href="mailto:{{site.email}}">
-			<span class="fa-stack fa-lg">
-				<i class="fa fa-circle fa-stack-2x"></i>
-				<i class="fa fa-envelope-o fa-stack-1x fa-inverse"></i>
-			</span>
-		</a>
-	</li>
-{% endif %}
-{% endraw %}
-```
-3. 
+3. 修改了一些hardcode的内容。比如页面上的`ABOUT ME`, `FEATURED TAGS`等等。在_config.yml中添加了相应的配置，并用这些配置替换模板中的hardcode内容。这样可以方便对这些内容做修改（万一我想修改）。
+4. Disqus评论之前全局控制的，如果_config.yml中设置了Disqus用户名，那么所有的博客文章页面下面都会显示评论框。本站增加了博客文章中的comment配置，只有当_config.yml中设置了Disqus用户名，并且一个博客文章中comment配置值为true的时候，这个博客的页面才会显示评论框。这样可以部分开启评论。
+5. catalog可以在一个博客文章页面开启，但是Hux Blog里也有文章开启了，但却没有目录出现，原因是还需要这个页面中有multilingual这个配置，不管它是true还是false，否则的话目录就没办法生成。本站在所有的博客文章中都增加了multilingual配置。（Hux的这个配置原本的意思是要控制一篇文章是不是有中文和英文两个版本，如果有就按选择的语言显示。)
+
+
 
 ## 注意事项
 1. CNAME文件。如果有这个文件，一定要把内容修改成自己的域名，否则会出错。

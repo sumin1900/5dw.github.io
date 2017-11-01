@@ -34,9 +34,10 @@ tags:
 1. 官方不建议在Windows下安装Jekyll，虽然你可以做到。这里建议，如果你用的是Windows系统，那么你可以跳过Jekyll部分，因为没有它你一样可以成功搭建你的网站，只不过不能本地调试而已。这里以Macbook为例。
 2. 通过命令`gem install jekyll`来安装jekyll
 3. 通过命令`jekyll new first`来创建自己的本地网站。这里‘first’是网站名，也是本地目录的名字，你可以随便用任何你想用的名字。
-4.
-
-![](/_posts/img/jekyll_first.png)
+4. `cd first`进入网站目录
+5. `jekyll serve`来启动本地服务，如下图所示：
+![](/img/jekyll_first.png)
+6. 之后你便可以用任何浏览器访问`http://localhost:4000`或`http://127.0.0.1:4000`，这就是你的博客网站了！
 ![](/img/jekyll_site.png)
 
 

@@ -111,11 +111,9 @@ Jekyll模板语言中有两类需要解释：
 ```
 意思是如果当前显示的page中定义了author配置项，则显示其内容，否则就显示_config.yml中的title配置项的内容。
 
-
-
-> 上面的page.author，是页面的配置项，写在页面开头的yaml里面。比如在index.html或about.html等里面，或者在_posts里面的博客文章里。
-> _config.yml之外的ymal配置项，在我们的网站中就是某些文件开头被`---`包围起来的内容。格式和上面说的_config.yml一样。
-> 比如
+> * 上面的page.author，是页面的配置项，写在页面开头的yaml里面。比如在index.html或about.html等里面，或者在_posts里面的博客文章里。
+> * _config.yml之外的ymal配置项，在我们的网站中就是某些文件开头被`---`包围起来的内容。格式和上面说的_config.yml一样。
+> * 比如：
 > ```
 > ---
 > author: 5dw
@@ -123,6 +121,7 @@ Jekyll模板语言中有两类需要解释：
 > 
 > 其它内容……
 > ```
+> * 页面或博客文章中有一个配置项是`layout`，这个决定了这个页面的内容会被用哪个格式文件显示。比如一个文章的layout设置成了post，也就是`layout: post`，而我们在_layout下面有个post.html格式文件，那么当你需要访问这个文章的时候，网站会把post.html载入，并把这个文章中的所有内容替换post.html中的`{% raw %}{{content}}{% endraw %}`。当然，post.html也可以设置layout，把它嵌套进另一个格式文件。
 
 
 ### 引用路径说明

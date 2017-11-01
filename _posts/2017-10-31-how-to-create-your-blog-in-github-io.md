@@ -165,3 +165,7 @@ Jekyll模板语言中有两类需要解释：
 # Markdown语法
 
 # 开始写作之旅，添加自己的博客文章
+
+顺便打个广告，当我在Windows 10上写作的时候，我用Bookpad app，可以在[Store](https://www.microsoft.com/store/apps/9N6P5ZH2SJSX)里面找到。界面如下：
+![](/img/bookpad.png)
+

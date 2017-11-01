@@ -101,11 +101,13 @@ Jekyll模板语言中有两类需要解释：
 
 比如：
 ```
-\\{\\% if page.author \\%\\}
-	\\{\\{ page.author \\}\\}
-\\{\\% else \\%\\}
-	\\{\\{ site.title \\}\\}
-\\{\\% endif \\%\\}
+{% raw %}
+{% if page.author %}
+	{{ page.author }}
+{% else %}
+	{{ site.title }}
+{% endif %}
+{% endraw %}
 ```
 意思是如果当前显示的page中定义了author配置项，则显示其内容，否则就显示_config.yml中的title配置项的内容。
 

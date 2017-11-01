@@ -172,16 +172,18 @@ Jekyll模板语言中有两类需要解释：
 # 开始写作之旅，添加自己的博客文章
 
 有了自己的博客网站，剩下的事情就是写文章了。我们需要做的事情只有一件，就是在_posts下面不停地添加markdown文件，每一个文件对应一个文章。每个文章有如下格式：
+> ```
 > ---
 > XXX1: YYY2
 > XXX2: YYY2
 > ---
 > 
 > Markdown内容
+> ```
 
 开头是ymal配置信息，一般会有title，date等等，这取决于你的模板文件中都用到了哪些。需要特别注意的是date这个东西，需要严格按照格式`2017-02-09 12:00:00`来。
 
-Markdown内容就是你的文章正文，Markdown的说法可以自行搜索。
+Markdown内容就是你的文章正文，Markdown的语法可以自行搜索。
 
 顺便打个广告，当我在Windows 10上写作的时候，我用Bookpad app，可以在[Store](https://www.microsoft.com/store/apps/9N6P5ZH2SJSX)里面找到。界面如下：
 ![](/img/bookpad.png)

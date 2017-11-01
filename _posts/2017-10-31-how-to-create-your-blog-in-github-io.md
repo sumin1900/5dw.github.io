@@ -113,14 +113,15 @@ Jekyll模板语言中有两类需要解释：
 
 
 
-> 上面的page.author，是页面的配置项，写在页面开关的yaml里面。比如在index.html或about.html等里面。
-> 还可以用post.xxx，这是博客文章的配置项，写在_posts里面的博客文章开关的ymal里面。只不过博客文章通常是markdown文件。
+> 上面的page.author，是页面的配置项，写在页面开头的yaml里面。比如在index.html或about.html等里面，或者在_posts里面的博客文章里。
 > _config.yml之外的ymal配置项，在我们的网站中就是某些文件开头被`---`包围起来的内容。格式和上面说的_config.yml一样。
 > 比如
 > ```
 > ---
 > author: 5dw
 > ---
+> 
+> 其它内容……
 > ```
 
 

@@ -36,7 +36,7 @@ tags:
 3. 通过命令`jekyll new first`来创建自己的本地网站。这里‘first’是网站名，也是本地目录的名字，你可以随便用任何你想用的名字。
 4.
 
-![](/_posts/.assets/jekyll_first.png)
+![](/_posts/img/jekyll_first.png)
 ![](/img/jekyll_site.png)
 
 

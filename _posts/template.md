@@ -10,5 +10,6 @@ catalog:    false
 comment: true
 multilingual: false
 tags:
-    -
+    - 
 ---
+

@@ -111,6 +111,20 @@ Jekyll模板语言中有两类需要解释：
 ```
 意思是如果当前显示的page中定义了author配置项，则显示其内容，否则就显示_config.yml中的title配置项的内容。
 
+```
+{% raw %}
+{% for post in paginator.posts %}
+<div>
+    <a href="{{ post.url | prepend: site.baseurl }}">
+        {{ post.title }}
+    </a>
+</div>
+{% endfor %}
+{% endraw %}
+```
+
+意思是遍历所有的post，并且显示一个链接到这个post页面，链接的内容是这个post中配置的title。如果你有十个博客文章，这里就会显示十个链接，分别链接到那十个博客文章的页面。
+
 > * 上面的page.author，是页面的配置项，写在页面开头的yaml里面。比如在index.html或about.html等里面，或者在_posts里面的博客文章里。
 > * _config.yml之外的ymal配置项，在我们的网站中就是某些文件开头被`---`包围起来的内容。格式和上面说的_config.yml一样。
 > * 比如：

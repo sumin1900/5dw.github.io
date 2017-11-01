@@ -4,7 +4,7 @@ title:      "在Github上免费搭建博客网站"
 subtitle:   "使用Jekyll模板搭建、使用Markdown编写，简单，直观"
 date:       2017-10-31 21:00:00
 author:     "5dw"
-header-img: "img/blog.jpg"
+header-img: "img/posts/blog.jpg"
 header-mask: 0.3
 catalog:    true
 comment: true
@@ -44,18 +44,18 @@ tags:
 3. 通过命令`jekyll new first`来创建自己的本地网站。这里‘first’是网站名，也是本地目录的名字，你可以随便用任何你想用的名字。
 4. `cd first`进入网站目录
 5. `jekyll serve`来启动本地服务，如下图所示：
-![](/img/jekyll_first.png)
+![](/img/posts/jekyll_first.png)
 6. 之后你便可以用任何浏览器访问`http://localhost:4000`或`http://127.0.0.1:4000`，这就是你的博客网站了，就这么简单！！
-![](/img/jekyll_site.png)
+![](/img/posts/jekyll_site.png)
 
 显然，这个博客网站不够完美，但是它确实已经是一个完整的博客网站，你可以把它部署到Github上看一下效果。你当然也可以完成以下的所有步骤之后再上传。
 
 # Github注册
 如果你的内容是可以公开的，允许任何人查看，那么Github对你来说是免费的。但如果你希望自己的内容是私有的，那么你需要付费。这里我们以免费的内容为例。如果你还没有Github账号，那么你需要注册一个。
 1. 在[Github网站](https://github.com/)上点右上角的注册(Sign Up)按钮按照提示完成注册。
-![](/img/github_reg1.png)
+![](/img/posts/github_reg1.png)
 2. 新建一个repository。这里需要注意，这个新的repository的名字**必须**是`[你的名字].github.io`。比如本站的github名字是5dw，那么对应的repository就是`5dw.github.io`.
-![](/img/github_reg2.png)
+![](/img/posts/github_reg2.png)
 
 # Git用法
 `git`命令可以用来管理github上的repository，可以把内容下载到本地，也可以把本地的修改上传到github。当然还可以做很多版本管理的事情，这里不涉及，有兴趣的可以自行搜索学习。在我们搭建博客网站的过程中主要需要用到下面几条命令：
@@ -194,6 +194,6 @@ Jekyll模板语言中有两类需要解释：
 Markdown内容就是你的文章正文，Markdown的语法可以自行搜索。
 
 顺便打个广告，当我在Windows 10上写作的时候，我用Bookpad app，可以在[Store](https://www.microsoft.com/store/apps/9N6P5ZH2SJSX)里面找到。界面如下：
-![](/img/bookpad.png)
+![](/img/posts/bookpad.png)
 
 欢迎指正！

@@ -5,7 +5,7 @@ header-img: img/header.jpg
 email: x.zhiquan@gmail.com
 description:
 keyword: ""
-url: "https://5dw.github.io"              # your host, for absolute URL
+url: "https://5dw.top"              # your host, for absolute URL
 baseurl: ""                             # for example, '/blog' if your blog hosted on 'host/blog'
 
 # SNS settings

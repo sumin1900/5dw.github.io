@@ -103,9 +103,9 @@ Jekyll模板语言中有两类需要解释：
 ```
 {% raw %}
 {% if page.author %}
-	{{ page.author }}
+    {{ page.author }}
 {% else %}
-	{{ site.title }}
+    {{ site.title }}
 {% endif %}
 {% endraw %}
 ```
@@ -136,6 +136,7 @@ Jekyll模板语言中有两类需要解释：
 3. package.json
 4. pwa
 5. 邮件提醒
+6. 转义
 
 # 满意上传
 

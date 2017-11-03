@@ -19,7 +19,26 @@ description: "五D空间飘来的一粒沙"
         </div>
     </a>
     <p class="post-meta">
-        Posted by {% if post.author %}{{ post.author }}{% else %}{{ site.title }}{% endif %} on {{ post.date | date: "%B %-d, %Y" }}
+        {% if page.author %}{{ page.author }}{% else %}{{ site.title }}{% endif %} {{site.posted-on-text}}
+        <!--2017年10月1日-->  
+        <!-- Whitespace added for readability -->
+        {{ page.date | date: "%Y" }}年
+        {% assign m = page.date | date: "%-m" %}
+        {% case m %}
+          {% when '1' %}1
+          {% when '2' %}2
+          {% when '3' %}3
+          {% when '4' %}4
+          {% when '5' %}5
+          {% when '6' %}6
+          {% when '7' %}7
+          {% when '8' %}8
+          {% when '9' %}9
+          {% when '10' %}10
+          {% when '11' %}11
+          {% when '12' %}12
+        {% endcase %}月
+        {{ page.date | date: "%-d" }}日
     </p>
 </div>
 <hr>

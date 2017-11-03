@@ -5,7 +5,7 @@ subtitle:   "不要高估现在的AI，也不要低估将来的AI"
 date:       2017-11-02 01:00:00
 author:     "5dw"
 header-img: "img/posts/chess.jpg"
-#header-mask: 0.3
+header-mask: 0.3
 catalog:    false
 comment: true
 multilingual: false

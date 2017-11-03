@@ -5,7 +5,7 @@ subtitle:   "有感于万维钢老师从信息论中看人生观"
 date:       2017-11-03 12:00:00
 author:     "5dw"
 header-img: "img/posts/raisting-sattelit-reception-signal.jpg"
-#header-mask: 0.3
+header-mask: 0.3
 catalog:    true
 comment: true
 multilingual: false

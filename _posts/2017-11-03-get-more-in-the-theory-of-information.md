@@ -6,7 +6,7 @@ date:       2017-11-03 12:00:00
 author:     "5dw"
 header-img: "img/posts/raisting-sattelit-reception-signal.jpg"
 #header-mask: 0.3
-catalog:    false
+catalog:    true
 comment: true
 multilingual: false
 tags:

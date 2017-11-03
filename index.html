@@ -20,10 +20,10 @@ description: "五D空间飘来的一粒沙"
     </a>
     <p class="post-meta">
         {% if page.author %}{{ page.author }}{% else %}{{ site.title }}{% endif %} {{site.posted-on-text}}
-        <!--2017年10月1日-->  
+        <!--2017年10月1日-->
         <!-- Whitespace added for readability -->
-        {{ page.date | date: "%Y" }}年
-        {% assign m = page.date | date: "%-m" %}
+        {{ post.date | date: "%Y" }}年
+        {% assign m = post.date | date: "%-m" %}
         {% case m %}
           {% when '1' %}1
           {% when '2' %}2
@@ -38,7 +38,7 @@ description: "五D空间飘来的一粒沙"
           {% when '11' %}11
           {% when '12' %}12
         {% endcase %}月
-        {{ page.date | date: "%-d" }}日
+        {{ post.date | date: "%-d" }}日
     </p>
 </div>
 <hr>

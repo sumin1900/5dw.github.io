@@ -11,9 +11,7 @@ comment: true
 multilingual: false
 tags:
     - 知识
-    - 学习
     - 思考
-    - 教育
     -
 ---
 

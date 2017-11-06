@@ -10,7 +10,7 @@ catalog:    true
 comment: true
 multilingual: false
 tags:
-    -
+    - 
 ---
 
 

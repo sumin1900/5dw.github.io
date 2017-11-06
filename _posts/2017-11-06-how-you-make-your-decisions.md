@@ -2,11 +2,11 @@
 layout:     post
 title:      "情绪是你自己的选择"
 subtitle:   "不要让你培养起来的隐性决策过程控制自己"
-date:       2017-11-05 12:00:00
+date:       2017-11-06 12:00:00
 author:     "5dw"
 header-img: "img/posts/decisions.png"
 header-mask: 0.1
-catalog:    false
+catalog:    true
 comment: true
 multilingual: false
 tags:

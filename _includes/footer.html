@@ -332,7 +332,13 @@
 {% if site.gitment_comments %}
 <!--workaround for Chinese support in gitment-->
 <script>
-  $('.gitment-comments-empty').text("还没有评论，快来坐沙发")
+$('.gitment-comments-empty').text("还没有评论，快来坐沙发")
 
+$('.gitment-editor-tab').eq(0).text("写评论")
+$('.gitment-editor-tab').eq(1).text("预览")
+$('.gitment-editor-logout-link').text("退出登录")
+$('.gitment-editor-submit').text("提交")
+
+$('.gitment-editor-write-field textarea').attr('placeholder','感谢在这里留下你的评论')
 </script>
 {% endif %}

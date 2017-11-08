@@ -1,5 +1,5 @@
 const dw_gitment_theme = {
-  function renderHeader({ meta, user, reactions }, instance) {
+  renderHeader({ meta, user, reactions }, instance) {
     const container = document.createElement('div')
     container.lang = "zh-CN"
     container.className = 'gitment-container gitment-header-container'
@@ -49,7 +49,7 @@ const dw_gitment_theme = {
     return container
   }
 
-  function renderComments({ meta, comments, commentReactions, currentPage, user, error }, instance) {
+  renderComments({ meta, comments, commentReactions, currentPage, user, error }, instance) {
     const container = document.createElement('div')
     container.lang = "zh-CN"
     container.className = 'gitment-container gitment-comments-container'
@@ -199,7 +199,7 @@ const dw_gitment_theme = {
     return container
   }
 
-  function renderEditor({ user, error }, instance) {
+  renderEditor({ user, error }, instance) {
     const container = document.createElement('div')
     container.lang = "zh-CN"
     container.className = 'gitment-container gitment-editor-container'

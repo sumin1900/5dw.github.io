@@ -1,4 +1,5 @@
 ---
+title: 5dw.home.page
 layout: page
 author: "5dw"
 description: "五D空间飘来的一粒沙"
@@ -67,10 +68,6 @@ description: "五D空间飘来的一粒沙"
 {% if site.gitment_comments %}
 <!--gitment common code start-->
 <div id="gitment-container"></div>
-<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
-<!-- <script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script> -->
-<script src="http://blog.geekaholic.cn/js/thirdParty/gitment.browser.min.js"></script>
-<script src="http://www.5dw.top/js/5dw.gitment.theme.js"></script>
 <script>
 var gitment = new Gitment({
   id: 'comments.on.index', // 可选。默认为 location.href
@@ -81,7 +78,6 @@ var gitment = new Gitment({
     client_secret: 'd28ab1f32bc368870cedf1ab8a5f1a1b2c2f4771',
   },
   perPage: 5,
-  theme:dw_gitment_theme,
 })
 gitment.render('gitment-container')
 </script>

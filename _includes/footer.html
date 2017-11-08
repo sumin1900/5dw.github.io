@@ -338,7 +338,8 @@ window.addEventListener("load", function(event) {
   $('.gitment-editor-write-field textarea').attr('placeholder','感谢您在这里留下评论').attr('title','登录后发表评论')
 
   var gitment_login_html = $('.gitment-editor-login').html()
-  $('.gitment-editor-login').html(gitment_login_html.replace(" with GitHub","到GitHub").replace("Logout","退出登录").replace('Login','登录'))
+  $('.gitment-editor-login').html(gitment_login_html.replace(" with GitHub","到GitHub").replace('Login','登录'))
+  //$('.gitment-editor-logout-link').text("退出登录")
 });
 </script>
 {% endif %}

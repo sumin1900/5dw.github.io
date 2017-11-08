@@ -1,4 +1,4 @@
-const dw_gitment_theme = {
+const 5dw_gitment_theme = {
   function renderHeader({ meta, user, reactions }, instance) {
     const container = document.createElement('div')
     container.lang = "zh-CN"

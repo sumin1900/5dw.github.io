@@ -328,8 +328,8 @@
 window.addEventListener("load", function(event) {
   $('.gitment-comments-empty').text("还没有评论，快来坐沙发")
 
-  var gitment_header_html = $('.gitment-container .gitment-header-container').html()
-  $('.gitment-container .gitment-header-container').html(gitment_header_html.replace('Liked','次被喜欢').replace('Like','表示喜欢').replace('Comments','条评论').replace('Issue Page','Issues页面').replace('Unlike','不再喜欢'))
+  //var gitment_header_html = $('.gitment-container .gitment-header-container').html()
+  //$('.gitment-container .gitment-header-container').html(gitment_header_html.replace('Liked','次被喜欢').replace('Like','表示喜欢').replace('Comments','条评论').replace('Issue Page','Issues页面').replace('Unlike','不再喜欢'))
 
   $('.gitment-editor-tab').eq(0).text("写评论")
   $('.gitment-editor-tab').eq(1).text("预览")
@@ -337,8 +337,8 @@ window.addEventListener("load", function(event) {
   $('.gitment-editor-footer-tip').text("支持markdown格式化内容")
   $('.gitment-editor-write-field textarea').attr('placeholder','感谢您在这里留下评论').attr('title','登录后发表评论')
 
-  var gitment_login_html = $('.gitment-editor-login').html()
-  $('.gitment-editor-login').html(gitment_login_html.replace(" with GitHub","到GitHub").replace('Login','登录'))
+  //var gitment_login_html = $('.gitment-editor-login').html()
+  //$('.gitment-editor-login').html(gitment_login_html.replace(" with GitHub","到GitHub").replace('Login','登录'))
   //$('.gitment-editor-logout-link').text("退出登录")
 });
 </script>

@@ -70,14 +70,17 @@ service-worker: true
 # Friends
 friends: [
     {
-        title: "Hux Blog",
-        href: "https://huangxuan.me/"
-    },{
         title: "Github",
         href: "http://github.com/"
     },{
+        title: "Hux Blog",
+        href: "https://huangxuan.me/"
+    },{
         title: "Gitment",
         href: "https://github.com/imsun/gitment"
+    },{
+        title: "Pexels",
+        href: "https://www.pexels.com/"
     }
 ]
 

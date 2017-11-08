@@ -75,6 +75,9 @@ friends: [
     },{
         title: "Github",
         href: "http://github.com/"
+    },{
+        title: "Gitment",
+        href: "https://github.com/imsun/gitment"
     }
 ]
 

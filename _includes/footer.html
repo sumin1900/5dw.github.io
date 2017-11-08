@@ -329,9 +329,13 @@
 
 {% if site.gitment_comments %}
 <!--workaround for Chinese support in gitment-->
-<script>
+<script type="text/javascript">
 window.addEventListener("load", function(event) {
   $('.gitment-comments-empty').text("还没有评论，快来坐沙发")
+
+  //$('.gitment-header-like-btn').html($('.gitment-header-like-btn').html().replace('Liked','次被喜欢').replace('Like','表示喜欢'))
+  //$('.gitment-header-issue-link').text("Issues页面")
+  $('.gitment-container .gitment-header-container').html(gitment_header_html.replace('Liked','次被喜欢').replace('Like','表示喜欢').replace('Comments','条评论').replace('issue page','Issues页面'))
 
   $('.gitment-editor-tab').eq(0).text("写评论")
   $('.gitment-editor-tab').eq(1).text("预览")
@@ -340,7 +344,6 @@ window.addEventListener("load", function(event) {
   $('.gitment-editor-logout-link').text("退出登录")
   $('.gitment-editor-submit').text("提交")
   $('.gitment-editor-footer-tip').text("支持markdown格式化内容")
-  $('.gitment-header-issue-link').text("Issues页面")
   $('.gitment-editor-write-field textarea').attr('placeholder','感谢在这里留下你的评论')
 });
 </script>

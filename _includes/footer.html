@@ -326,23 +326,31 @@
 <!--workaround for Chinese support in gitment-->
 <script type="text/javascript">
 window.addEventListener("load", function(event) {
-  $('.gitment-comments-empty').text("还没有评论，快来坐沙发")
-  $('.gitment-comments-empty').bind("DOMSubtreeModified",function(){
-    $('.gitment-comments-empty').text("还没有评论，快来坐沙发")
+  //Using Javascript MutationObserver to detect HTML changes
+  //More Details https://developer.mozilla.org/en-US/docs/Web/API/MutationObserver
+  // select the target node
+  var target = document.querySelector('.gitment-container .gitment-root-container')
+  // create an observer instance
+  var observer = new MutationObserver(function(mutations) {
+      $('.gitment-comments-empty').text("还没有评论，快来坐沙发")
+
+      //var gitment_header_html = $('.gitment-container .gitment-header-container').html()
+      //$('.gitment-container .gitment-header-container').html(gitment_header_html.replace('Liked','次被喜欢').replace('Like','表示喜欢').replace('Comments','条评论').replace('Issue Page','Issues页面').replace('Unlike','不再喜欢'))
+
+      $('.gitment-editor-tab').eq(0).text("写评论")
+      $('.gitment-editor-tab').eq(1).text("预览")
+      $('.gitment-editor-submit').text("提交")
+      $('.gitment-editor-footer-tip').text("支持markdown格式化内容")
+      $('.gitment-editor-write-field textarea').attr('placeholder','感谢您在这里留下评论').attr('title','登录后发表评论')
+
+      //var gitment_login_html = $('.gitment-editor-login').html()
+      //$('.gitment-editor-login').html(gitment_login_html.replace(" with GitHub","到GitHub").replace('Login','登录'))
+      //$('.gitment-editor-logout-link').text("退出登录")
   });
-
-  //var gitment_header_html = $('.gitment-container .gitment-header-container').html()
-  //$('.gitment-container .gitment-header-container').html(gitment_header_html.replace('Liked','次被喜欢').replace('Like','表示喜欢').replace('Comments','条评论').replace('Issue Page','Issues页面').replace('Unlike','不再喜欢'))
-
-  $('.gitment-editor-tab').eq(0).text("写评论")
-  $('.gitment-editor-tab').eq(1).text("预览")
-  $('.gitment-editor-submit').text("提交")
-  $('.gitment-editor-footer-tip').text("支持markdown格式化内容")
-  $('.gitment-editor-write-field textarea').attr('placeholder','感谢您在这里留下评论').attr('title','登录后发表评论')
-
-  //var gitment_login_html = $('.gitment-editor-login').html()
-  //$('.gitment-editor-login').html(gitment_login_html.replace(" with GitHub","到GitHub").replace('Login','登录'))
-  //$('.gitment-editor-logout-link').text("退出登录")
+  // configuration of the observer:
+  var config = { attributes: true, childList: true, characterData: true };
+  // pass in the target node, as well as the observer options
+  observer.observe(target, config);
 });
 </script>
 {% endif %}

@@ -37,11 +37,14 @@ markdown: kramdown
 kramdown:
   input: GFM                            # use Github Flavored Markdown !important
 
-# Disqus settings
-disqus_username: 5dw
+# Comments settings, please only use one of the following comments system (disqus, gitment, netease)
+#disqus_username: 5dw                    # cannot access in China
+
+# gitment
+gitment_comments: true                   # gitment is a comment project base on git issues
 
 # Netease setttings
-netease_comment: false
+netease_comment: false                   # stop working now
 
 # Analytics settings
 # Baidu Analytics

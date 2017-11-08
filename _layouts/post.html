@@ -41,7 +41,7 @@ layout: default
                     <h2 class="subheading">{{ page.subtitle }}</h2>
                     {% comment %} endif {% endcomment %}
                     <span class="meta">
-                      {% if page.author %}{{ page.author }}{% else %}{{ site.title }}{% endif %} {{site.posted-on-text}} 
+                      {% if page.author %}{{ page.author }}{% else %}{{ site.title }}{% endif %} {{site.posted-on-text}}
                       <!--2017年10月1日-->
                       <!-- Whitespace added for readability -->
                       {{ page.date | date: "%Y" }}年
@@ -112,20 +112,26 @@ layout: default
                 </ul>
 
 
-                {% if site.disqus_username %}
                 {% if page.comment %}
-                <!-- disqus 评论框 start -->
-                <div class="comment">
-                    <div id="disqus_thread" class="disqus-thread"></div>
-                </div>
-                <!-- disqus 评论框 end -->
-                {% endif %}
-                {% endif %}
+                  {% if site.disqus_username %}
+                  <!-- disqus 评论框 start -->
+                  <div class="comment">
+                      <div id="disqus_thread" class="disqus-thread"></div>
+                  </div>
+                  <!-- disqus 评论框 end -->
+                  {% endif %}
 
-                {% if site.netease_comment %}
-                <!-- 网易云跟帖 评论框 start -->
-                <div id="cloud-tie-wrapper" class="cloud-tie-wrapper"></div>
-                <!-- 网易云跟帖 评论框 end -->
+                  {% if site.netease_comment %}
+                  <!-- 网易云跟帖 评论框 start -->
+                  <div id="cloud-tie-wrapper" class="cloud-tie-wrapper"></div>
+                  <!-- 网易云跟帖 评论框 end -->
+                  {% endif %}
+
+                  {% if site.gitment_comments %}
+                  <!--gitment start-->
+                  <div id="gitment-container"></div>
+                  <!--gitment end-->
+                  {% endif %}
                 {% endif %}
             </div>
 
@@ -185,6 +191,7 @@ layout: default
 </article>
 
 
+{% if page.comment %}
 {% if site.netease_comment %}
 <!-- 网易云跟帖JS代码 start -->
 <script src="https://img1.cache.netease.com/f2e/tie/yun/sdk/loader.js"></script>
@@ -203,7 +210,6 @@ layout: default
 
 
 {% if site.disqus_username %}
-{% if page.comment %}
 <!-- disqus 公共JS代码 start (一个网页只需插入一次) -->
 <script type="text/javascript">
     /* * * CONFIGURATION VARIABLES * * */
@@ -219,6 +225,23 @@ layout: default
 </script>
 <!-- disqus 公共JS代码 end -->
 {% endif %}
+
+<!--gitment common code start-->
+<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+<script>
+var gitment = new Gitment({
+  id: 'location.href', // 可选。默认为 location.href
+  owner: '5dw',
+  repo: '5dw.github.io',
+  oauth: {
+    client_id: 'f0142e8e077d9d7ba05d',
+    client_secret: 'd28ab1f32bc368870cedf1ab8a5f1a1b2c2f4771',
+  },
+})
+gitment.render('gitment-container')
+</script>
+<!--gitment common code end-->
 {% endif %}
 
 

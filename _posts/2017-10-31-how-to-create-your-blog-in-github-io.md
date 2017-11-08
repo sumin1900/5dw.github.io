@@ -196,4 +196,5 @@ Markdown内容就是你的文章正文，Markdown的语法可以自行搜索。
 顺便打个广告，当我在Windows 10上写作的时候，我用Bookpad app，可以在[Store](https://www.microsoft.com/store/apps/9N6P5ZH2SJSX)里面找到。界面如下：
 ![](/img/posts/bookpad.png)
 
-欢迎指正！
+**************
+感谢阅读，欢迎指正。

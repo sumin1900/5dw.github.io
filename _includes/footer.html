@@ -325,7 +325,7 @@
 {% if site.gitment_comments %}
 <!--workaround for Chinese support in gitment-->
 <script type="text/javascript">
-
+/*
 function translate_gitment_to_chinese(){
   $('.gitment-comments-empty').text("还没有评论，快来坐沙发")
 
@@ -342,6 +342,7 @@ function translate_gitment_to_chinese(){
   //$('.gitment-editor-login').html(gitment_login_html.replace(" with GitHub","到GitHub").replace('Login','登录'))
   //$('.gitment-editor-logout-link').text("退出登录")
 }
+
 window.addEventListener("load", function(event) {
   //Using Javascript MutationObserver to detect HTML changes
   //More Details https://developer.mozilla.org/en-US/docs/Web/API/MutationObserver
@@ -359,5 +360,6 @@ window.addEventListener("load", function(event) {
   observer.observe(target, config);
 });
 translate_gitment_to_chinese()
+*/
 </script>
 {% endif %}

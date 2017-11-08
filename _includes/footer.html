@@ -335,8 +335,11 @@ window.addEventListener("load", function(event) {
 
   $('.gitment-editor-tab').eq(0).text("写评论")
   $('.gitment-editor-tab').eq(1).text("预览")
+  $('.gitment-editor-login').html($('.gitment-editor-login').html().replace(" with GitHub","到GitHub"))
+  $('.gitment-editor-login-link').text("登录")
   $('.gitment-editor-logout-link').text("退出登录")
   $('.gitment-editor-submit').text("提交")
+  $('.gitment-editor-footer-tip').text("支持markdown格式化内容")
   $('.gitment-header-issue-link').text("Issues页面")
   $('.gitment-editor-write-field textarea').attr('placeholder','感谢在这里留下你的评论')
 });

@@ -77,7 +77,7 @@
                             </span>
                         </a>
                     </li>
-                    {% endif %}                    
+                    {% endif %}
                     {% if site.email %}
                     <li>
                         <a target="_blank" href="mailto:{{site.email}}">
@@ -323,5 +323,16 @@
 
     // init
     _render();
+</script>
+{% endif %}
+
+
+
+
+{% if site.gitment_comments %}
+<!--workaround for Chinese support in gitment-->
+<script>
+  $('.gitment-comments-empty').text("还没有评论，快来坐沙发")
+
 </script>
 {% endif %}

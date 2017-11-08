@@ -83,4 +83,9 @@ var gitment = new Gitment({
 gitment.render('gitment-container')
 </script>
 <!--gitment common code end-->
+
+<!--workaround for Chinese support in gitment-->
+<script>
+  $('.gitment-comments-empty')[0].innerText = "还没有评论，快来坐沙发"
+</script>
 {% endif %}

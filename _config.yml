@@ -99,3 +99,6 @@ next-text: 后一篇
 friends-text: 友情链接
 newer-post-text: 更新的文章
 older-post-text: 更旧的文章
+
+# donate way
+donate_method:   # 1=微信转账，2=微信打赏，3=支付宝转账，空=不显示打赏。可自定义，只需要图片名字用些数字区别

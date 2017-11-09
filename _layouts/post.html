@@ -64,10 +64,9 @@ layout: default
 
                       <span class="small">
                         <!--busuanzi counter start-->
-                        <i class="fa fa-eye fa-spin fa-inverse" title="本文访问量"></i>
-
                         {% if site.busuanzi_counter %}
                         <span id="busuanzi_container_page_pv" style='display:none'>
+                            <i class="fa fa-eye fa-spin fa-inverse" title="本文访问量"></i>
                             被审阅<span id="busuanzi_value_page_pv"></span>次
                         </span>
                         {% endif %}
@@ -100,9 +99,18 @@ layout: default
                 </select>
                 {% endif %}
 
-				{{ content }}
+				        {{ content }}
 
-                <hr style="visibility: hidden;">
+                <hr>
+                <span>
+                  感谢阅读，欢迎指正。
+                  {% if site.donate_method %}
+                  <span class="donate_span">还可打赏
+                    <img class="donate_small_img" src="/img/WeChat_donate{{site.donate_method}}_small.jpg" style="display: inline;"></img>
+                    <img class="donate_larg_img" src="/img/WeChat_donate{{site.donate_method}}.jpg" style="display: none;"></img>
+                  </span>
+                  {% endif %}
+                </span>
 
                 <ul class="pager">
                     {% if page.previous.url %}

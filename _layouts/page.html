@@ -10,7 +10,21 @@ layout: default
                 <div class="site-heading">
                     <h1>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</h1>
                     <!--<hr class="small">-->
-                    <span class="subheading">{{ page.description }}</span>
+                    <span class="subheading">
+                      {{ page.description }}
+
+                      <span class="small">
+                        <!--busuanzi counter start-->
+                        <i class="fa fa-eye fa-spin fa-inverse" title="本站访问量"></i>
+
+                        {% if site.busuanzi_counter %}
+                        <span id="busuanzi_container_site_pv" style='display:none'>
+                            被吹拂<span id="busuanzi_value_site_pv"></span>次
+                        </span>
+                        {% endif %}
+                        <!--busuanzi counter end-->
+                      </span>
+                    </span>
                 </div>
             </div>
         </div>

@@ -61,6 +61,18 @@ layout: default
                         {% when '12' %}12
                       {% endcase %}月
                       {{ page.date | date: "%-d" }}日
+
+                      <span class="small">
+                        <!--busuanzi counter start-->
+                        <i class="fa fa-eye fa-spin fa-inverse" title="本文访问量"></i>
+
+                        {% if site.busuanzi_counter %}
+                        <span id="busuanzi_container_page_pv" style='display:none'>
+                            被审阅<span id="busuanzi_value_page_pv"></span>次
+                        </span>
+                        {% endif %}
+                        <!--busuanzi counter end-->
+                      </span>
                     </span>
                 </div>
             </div>

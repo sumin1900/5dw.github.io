@@ -27,7 +27,7 @@ anchorjs: true                          # if you want to customize anchor. check
 
 # Gems
 # from PR#40, to support local preview for Jekyll 3.0
-plugins: [jekyll-paginate]
+gems: [jekyll-paginate]
 
 # Markdown settings
 # replace redcarpet to kramdown,
@@ -45,6 +45,9 @@ gitment_comments: true                   # gitment is a comment project base on 
 
 # Netease setttings
 netease_comment: false                   # stop working now
+
+# busuanzi counter
+busuanzi_counter: true
 
 # Analytics settings
 # Baidu Analytics

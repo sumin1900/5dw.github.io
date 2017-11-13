@@ -14,6 +14,3 @@ tags:
     - 善
 ---
 
-some content
-
-more content

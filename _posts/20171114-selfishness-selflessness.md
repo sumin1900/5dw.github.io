@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      "自私与无私"
-subtitle:   "你看到的不是别人的真想"
+subtitle:   "你看到的不是别人的真相"
 date:       2017-11-14
 author:     "5dw"
 header-img: "img/posts/.jpg"

@@ -2,7 +2,7 @@
 layout:     post
 title:      ""
 subtitle:   ""
-date:       2017-11-09 12:00:00
+date:       2017-11-09
 author:     "5dw"
 header-img: "img/posts/.jpg"
 header-mask: 0.1

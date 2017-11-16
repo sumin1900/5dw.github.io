@@ -1,7 +1,7 @@
 {
-  "name": "五D网",
-  "short_name": "5DW",
-  "description": "通往五维空间的知识之路",
+  "name": "Bookr Blog",
+  "short_name": "Bookr",
+  "description": "读书，写作",
   "icons": [{
     "src": "icons/128.ico",
     "sizes": "128x128",

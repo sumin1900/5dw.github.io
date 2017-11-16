@@ -19,7 +19,7 @@ const PRECACHE_LIST = [
   "./js/bootstrap.min.js",
   "./js/hux-blog.min.js",
   "./js/snackbar.js",
-  "./img/5dw.jpg",
+  "./img/bookr.jpg",
   "./img/header.jpg",
   "./img/404-bg.jpg",
   "./css/hux-blog.min.css",
@@ -31,7 +31,8 @@ const PRECACHE_LIST = [
 ]
 const HOSTNAME_WHITELIST = [
   self.location.hostname,
-  "5dw.github.io"
+  "sumin1900.github.io",
+  "www.bookr.top"
 ]
 const DEPRECATED_CACHES = ['precache-v1', 'runtime', 'main-precache-v1', 'main-runtime']
 

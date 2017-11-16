@@ -1,14 +1,14 @@
 {
-    "name": "5dw",
-    "title": "5dw",
-    "author": "zhiquan <x.zhiquan@gmail.com>",
+    "name": "bookr",
+    "title": "bookr",
+    "author": "bookr <sumin1900@126.com>",
     "version": "0.1.0",
-    "homepage": "http://5dw.top",
+    "homepage": "http://www.bookr.top",
     "repository": {
         "type": "git",
-        "url": "https://github.com/5dw/5dw.github.io"
+        "url": "https://github.com/sumin1900/sumin1900.github.io"
     },
-    "bugs": "https://github.com/5dw/5dw.github.io/issues",
+    "bugs": "https://github.com/sumin1900/sumin1900.github.io/issues",
     "devDependencies": {
         "grunt": "~0.4.5",
         "grunt-contrib-less": "~0.11.4",

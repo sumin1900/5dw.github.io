@@ -1,18 +1,18 @@
 # Site settings
-title: 五D网
-SEOTitle: 5DW | 用5D的眼光，成功我们3D的世界
+title: Bookr Blog
+SEOTitle: 阅读改变自己，写作改变世界
 header-img: img/header.jpg
-email: x.zhiquan@gmail.com
+email:
 description:
 keyword: ""
-url: "https://5dw.top"              # your host, for absolute URL
+url: "https://www.bookr.top"              # your host, for absolute URL
 baseurl: ""                             # for example, '/blog' if your blog hosted on 'host/blog'
 
 # SNS settings
 RSS: false
 #weibo_username:
 #zhihu_username:     5dw
-github_username:    5dw
+github_username:    #sumin1900
 #twitter_username:
 #facebook_username:  huxpro
 # linkedin_username:  firstname-lastname-idxxxx
@@ -42,12 +42,16 @@ kramdown:
 
 # gitment
 gitment_comments: true                   # gitment is a comment project base on git issues
+gitment_client_id: 2d7ad1b8bb6eedd35b99
+gitment_client_secret: 5f97821145ae9022c6b088ad1438328563980f32
 
 # Netease setttings
 netease_comment: false                   # stop working now
 
 # busuanzi counter
 busuanzi_counter: true
+busuanzi_site_conter_text: 被访问
+busuanzi_page_conter_text: 阅读
 
 # Analytics settings
 # Baidu Analytics
@@ -58,9 +62,9 @@ busuanzi_counter: true
 #ga_domain: 5dw.github.io
 
 # Sidebar settings
-sidebar: true                           # whether or not using Sidebar.
-sidebar-about-description: "沙一粒<br>努力影响世界<br>思考<br>三维之空、四维之间、五维之世界"
-sidebar-avatar: /img/5dw.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
+sidebar: false                           # whether or not using Sidebar.
+sidebar-about-description: ""
+sidebar-avatar: /img/bookr.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 # Featured Tags
 featured-tags: true                     # whether or not using Feature-Tags
@@ -101,4 +105,4 @@ newer-post-text: 更新的文章
 older-post-text: 更旧的文章
 
 # donate way
-donate_method: 2  # 1=微信转账，2=微信打赏，3=支付宝转账，空=不显示打赏。可自定义，只需要图片名字用些数字区别
+donate_method:   # 1=微信转账，2=微信打赏，3=支付宝转账，空=不显示打赏。可自定义，只需要图片名字用些数字区别

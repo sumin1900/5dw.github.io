@@ -2,6 +2,9 @@
 layout: page
 author: "5dw"
 description: "五D空间飘来的一粒沙"
+gitment_id: comments.on.index
+gitment_perpage: 5
+comment: true
 ---
 
 {% for post in paginator.posts %}
@@ -63,22 +66,8 @@ description: "五D空间飘来的一粒沙"
 {% endif %}
 
 <!--comments-->
-
 {% if site.gitment_comments %}
 <!--gitment common code start-->
 <div id="gitment-container"></div>
-<script>
-var gitment = new Gitment({
-  id: 'comments.on.index', // 可选。默认为 location.href
-  owner: '{{site.github_username}}',
-  repo: '{{site.github_username}}.github.io',
-  oauth: {
-    client_id: '{{site.gitment_client_id}}',
-    client_secret: '{{site.gitment_client_secret}}',
-    },
-  perPage: 5,
-})
-gitment.render('gitment-container')
-</script>
 <!--gitment common code end-->
 {% endif %}

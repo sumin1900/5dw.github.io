@@ -43,11 +43,16 @@ kramdown:
 # gitment
 gitment_comments: true                   # gitment is a comment project base on git issues
 
+gitment_client_id: f0142e8e077d9d7ba05d
+gitment_client_secret: d28ab1f32bc368870cedf1ab8a5f1a1b2c2f4771
+
 # Netease setttings
 netease_comment: false                   # stop working now
 
 # busuanzi counter
 busuanzi_counter: true
+busuanzi_site_conter_text: 被吹拂
+busuanzi_page_conter_text: 被审阅
 
 # Analytics settings
 # Baidu Analytics
@@ -84,6 +89,9 @@ friends: [
     },{
         title: "Pexels",
         href: "https://www.pexels.com/"
+    },{
+        title: "Bookr Blog",
+        href: "https://www.bookr.top/"
     }
 ]
 
@@ -101,4 +109,4 @@ newer-post-text: 更新的文章
 older-post-text: 更旧的文章
 
 # donate way
-donate_method: 2  # 1=微信转账，2=微信打赏，3=支付宝转账，空=不显示打赏。可自定义，只需要图片名字用些数字区别
+donate_method:   # 1=微信转账，2=微信打赏，3=支付宝转账，空=不显示打赏。可自定义，只需要图片名字用些数字区别
